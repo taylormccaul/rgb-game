@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $(".target-color").hide();
+    $(".user-colors").hide();
+    $(".menu").show();
+    
     let red = 255;
     let green = 255;
     let blue = 255;
@@ -7,15 +11,15 @@ $(document).ready(function() {
     let greenHead = document.getElementById("green-h2");
     let blueHead = document.getElementById("blue-h2");
 
-    let redAdd = document.getElementById("red-add");
-    let greenAdd = document.getElementById("green-add");
-    let blueAdd = document.getElementById("blue-add");
+    //let redAdd = document.getElementById("red-add");
+    //let greenAdd = document.getElementById("green-add");
+    //let blueAdd = document.getElementById("blue-add");
 
-    let redMinus = document.getElementById("red-minus");
-    let greenMinus = document.getElementById("green-minus");
-    let blueMinus = document.getElementById("blue-minus");
+    //let redMinus = document.getElementById("red-minus");
+    //let greenMinus = document.getElementById("green-minus");
+    //let blueMinus = document.getElementById("blue-minus");
 
-    let targetColor = document.querySelector(".target-color");
+    //let targetColor = document.querySelector(".target-color");
 
     /*let redMin = 0;
     let redMax = 255;
