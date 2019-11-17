@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>jQuery Practice</title>
+        <title>RGB Game</title>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Montserrat|Fredoka+One&display=swap" rel="stylesheet">
         <link href="rgbgame.scss" rel="stylesheet">
@@ -15,16 +15,17 @@
     <body>
         <div class="menu">
             <h1>RGB Game</h1>
-            <button type="button" class="modes">Easy</button>
-            <button type="button" class="modes">Medium</button>
-            <button type="button" class="modes">Hard</button>
+            <button type="button" class="modes" id="easy">Easy</button>
+            <button type="button" class="modes" id="medium">Medium</button>
+            <button type="button" class="modes" id="hard">Hard</button>
         </div>
         <div class="target-color"></div>
         <div class="user-colors">
+            <h2 id="back-link">&lt; Back</h2>
             <div class="header-div">
-                <h2 id="red-h2">rgb( ,</h2>
-                <h2 id="green-h2">, </h2>
-                <h2 id="blue-h2"> )</h2>
+                <h2 id="red-h2"></h2>
+                <h2 id="green-h2"></h2>
+                <h2 id="blue-h2"></h2>
             </div>
             <div class="plus-div">
                 <h3>Add</h3>
@@ -38,6 +39,20 @@
                 <button type="button" class="minus" id="green-minus">-</button>
                <button type="button" class="minus" id="blue-minus">-</button>
             </div>
+            <div class="iterator-div">
+                <h3>Iterate by:</h3>
+                <button type="button" class="inc-btn" id="inc-plus">+</button>
+                <h4>1</h4>
+                <button type="button" class="inc-btn" id="inc-minus">-</button>
+            </div>
+        </div>
+        <!--<div class="win-screen">
+
+        </div>-->
+        <div class="win-screen">
+            <h2>YOU WON</h2>
+            <h3 id="value-show"></h3>
+            <h3 id="play-again">Play again</h3>
         </div>
     </body>
 </html>
